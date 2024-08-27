@@ -11,6 +11,7 @@
     <groupId>net.hatim</groupId>
     <artifactId>customer-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
     <name>customer-service</name>
     <description>customer-service</description>
     <url/>

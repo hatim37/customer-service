@@ -27,8 +27,8 @@ jobs:
 
       - name : Build Docker Image
         run: |
-          docker build -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/customer-s:latest
-          docker push -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/customer-s:latest
+          docker build . -t gcr.io/${{ secrets.GCP_PROJECT_ID }}/customer-s:latest
+          docker push gcr.io/${{ secrets.GCP_PROJECT_ID }}/customer-s:latest
 
       - name: Deploy to Cloud Run
         run: |
