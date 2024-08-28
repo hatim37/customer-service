@@ -36,6 +36,11 @@ public class CustomerServiceApplication {
                             .firstName("Hassan3")
                             .lastName("el3")
                             .email("hassan3@gmail.com")
+                            .build(),
+                    Customer.builder()
+                            .firstName("Hassan4")
+                            .lastName("el4")
+                            .email("hassan4@gmail.com")
                             .build()
             );
             customerRepository.saveAll(customerList);
